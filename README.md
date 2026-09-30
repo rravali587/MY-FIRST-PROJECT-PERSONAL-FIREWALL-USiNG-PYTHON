@@ -56,12 +56,8 @@ The `psutil` Python library is used to obtain network connection information.
 
 Python 3.x
 
-Install the required library using:
 
-bash
-pip install psutil
-
-##project-2 Web Applications 
+•project-2 Web Applications 
 
 Website URL Checker using Python
 
