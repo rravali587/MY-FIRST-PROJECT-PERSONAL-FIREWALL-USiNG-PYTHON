@@ -58,7 +58,7 @@ Python 3.x
 
 Install the required library using:
 
-```bash
+bash
 pip install psutil
 
 ##project-2 Web Applications 
