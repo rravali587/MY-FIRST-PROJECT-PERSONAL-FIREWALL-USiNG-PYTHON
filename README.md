@@ -53,145 +53,92 @@ The user can select an option:
 The `psutil` Python library is used to obtain network connection information.
 
 ## 6. Requirements
+python.3x
 
-Python 3.x
 
+PROJECT 2 WEB APPLICATION VULNERABLITY SCANNER
 
-#project-2 Web Applications 
+# Website URL Checker using Python
 
-Website URL Checker using Python
+## Project Description
 
-Project Description
+This project is a simple Python-based Website URL Checker. It checks whether a given website URL is reachable or not by sending an HTTP/HTTPS request using the Python requests library.
 
-Website URL Checker is a simple Python-based application that checks whether a website can be reached successfully.
+The program asks the user to enter a website URL and checks the connection. If the website is reachable, it displays the HTTP status code. If the website cannot be reached, it displays an appropriate error message.
 
-The program accepts a website URL from the user and sends an HTTP/HTTPS request using the Python Requests library. It displays the HTTP status code when a response is received and shows an appropriate error message when a connection problem occurs.
+## Features
 
-Objectives
+- Accepts a website URL from the user
+- Checks website connectivity
+- Displays HTTP status code
+- Shows whether the website is reachable
+- Handles connection errors
+- Simple and easy-to-use Python program
 
-- To check whether a website is reachable.
-- To understand HTTP and HTTPS requests.
-- To learn how to use the Python Requests library.
-- To understand basic URL handling.
-- To implement exception handling.
-- To develop a simple command-line networking tool.
+## Technologies Used
 
-Technologies Used
+- Python
+- Requests Library
+- Pydroid 3
 
-- Python 3
-- Requests library
-- HTTP/HTTPS
-- Internet connection
-- Pydroid 3 / Python environment
+## Installation
 
-Requirements
-
-Python 3 and the Requests library are required.
-
-Install the Requests library using:
+Install the required requests library using:
 
 pip install requests
 
-Features
-
-- Simple command-line interface
-- Accepts website URLs from the user
-- Automatically adds "https://" when the protocol is not provided
-- Checks website connectivity
-- Displays HTTP status codes
-- Handles connection errors
-- Handles timeout errors
-- Handles invalid URL errors
-
-How the Program Works
-
-1. The user enters a website URL.
-2. The program checks whether the URL contains "http://" or "https://".
-3. If no protocol is provided, "https://" is added automatically.
-4. The Requests library sends an HTTP/HTTPS request.
-5. The program receives the server response.
-6. The HTTP status code is displayed.
-7. If an error occurs, an appropriate error message is displayed.
-
-Example
-
-Input
-
-Enter website URL: https://google.com
-
-Output
-
-Website is reachable.
-URL: https://google.com
-Status Code: 200
-
-A status code of "200" generally indicates that the server successfully processed the request.
-
-Error Handling
-
-The application handles common problems such as:
-
-- Connection timeout
-- Connection failure
-- Invalid URL
-- DNS/name-resolution problems
-- Other HTTP request errors
-
-How to Run
-
-Using Pydroid 3
+## How to Run
 
 1. Open Pydroid 3.
-2. Install the Requests package.
-3. Create a new Python file.
-4. Save it as "website_checker.py".
-5. Paste the project code.
-6. Run the program.
-7. Enter a complete website URL.
+2. Open the Python project file.
+3. Run the program.
+4. Enter a complete website URL.
 
-Using Python
+Example:
 
-Install the required package:
+https://www.google.com
 
-pip install -r requirements.txt
+Expected Output:
 
-Run the program:
+Website is reachable!
+Status Code: 200
 
-python website_checker.py
+## Error Handling
 
-Sample Test Cases
+If an invalid website name is entered, the program displays an error message.
 
-Test Case| Input| Expected Result
-1| "https://google.com"| HTTP response/status displayed
-2| "https://github.com"| HTTP response/status displayed
-3| "google.com"| HTTPS added automatically
-4| "sanjana.invalid"| Connection/name-resolution error
-5| Unresponsive website| Timeout error
+For example:
 
-Limitations
+sanjana
 
-- An internet connection is required.
-- Some websites may block automated requests.
-- Temporary server or DNS problems may affect the result.
-- A successful response does not guarantee that every page or feature of a website works correctly.
+This is not a complete website URL, so the program may show a hostname resolution error.
 
-Future Enhancements
+Use a complete URL such as:
 
-The project can be improved by adding:
+https://www.google.com
 
-- Website response-time measurement
-- Multiple URL checking
-- Automatic URL validation
-- Status-code descriptions
-- Website availability reports
-- Logging of checked URLs
-- Graphical user interface
-- CSV or Excel report generation
-- Website availability history
+instead of:
 
-Conclusion
+sanjana
 
-The Website URL Checker is a beginner-friendly Python project that demonstrates basic networking concepts, HTTP/HTTPS communication, URL handling, the Requests library, and exception handling.
+## Test Cases
 
-The project provides practical experience in developing a simple command-line networking application and can be extended with additional monitoring and reporting features.
+| Test Case | Input | Expected Result |
+|----------|-------|-----------------|
+| 1 | https://www.google.com | Website reachable |
+| 2 | https://www.youtube.com | Website reachable |
+| 3 | sanjana | Invalid/hostname error |
+| 4 | https://example.com | Website reachable |
 
+## Project Output
+
+The program displays:
+
+- Entered website URL
+- Website connection status
+- HTTP response status code
+- Error message if the website cannot be reached
+
+## Conclusion
+
+The Website URL Checker using Python is a simple networking project that demonstrates how Python can be used to check website availability. It helps in understanding HTTP requests, response status codes, URL validation, and basic network error handling.
